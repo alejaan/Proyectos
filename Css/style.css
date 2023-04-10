@@ -566,8 +566,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(205, 174, 50);
-        border-radius: 50%;
+        background-color: transparent;
         color: white;
         margin: 2px;
         padding: 5%;
