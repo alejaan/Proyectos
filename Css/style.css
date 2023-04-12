@@ -26,6 +26,9 @@ header{
 .menu{
     width: auto;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title{
@@ -82,6 +85,7 @@ nav ul li a:hover::before{
 
 .man-moto{
     width: 35%;
+    height: auto;
     margin: 2%;
     border-radius: 5%;
 }
@@ -593,86 +597,126 @@ footer{
 
 /** Aplicando medias*/
 
+@media only screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-@media(max-width:1100px){
-    .icons{
-        width: 100% !important;
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .suzuki {
+        flex-direction: column;
+    }
+
+    .bmw {
+        flex-direction: column;
+    }
+
+    .informacion {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
-@media(max-width: 550px){
-    .info{
+/** Aplicando medias query para telefonos*/
+@media (max-width: 550px){
+    header{
         display: inline-block;
         text-align: center;
     }
 
-    header{
+    .title{
         text-align: center;
-        justify-content: center;
+        margin: auto;
     }
 
-    .Footer_container{
+    body{
+        display: inline-block;
+        text-align: center;
         grid-template-columns: 1fr;
     }
 
-    /** Apartado de yamaha*/
-
-    .img{
-        width: 100%;
+    footer{
+        grid-template-columns: 1fr;
     }
 
-    .serie-r{
-        width: 100%;
-    }
+    /** Apartado de pagina Yamaha*/
 
-    .detailes{
+    .titulo-serie-r{
         text-align: center;
     }
 
-    .img-mt{
-        width: 55%;
-        height: 100px;
-        justify-content: center;
+    .serie-r{
+        display: inline-block;
+        text-align: center;
     }
 
-    .img-fz{
-        width: 55%;
-        height: 100px;
-        justify-content: center;
+    .detailes{
+        text-align: center;        
     }
 
-    /**Apartado de honda */
-
-    .img-cbr{
-        width: 50%;
-        height: 50%;
+    .serie-mt{
+        display: inline-block;
+        text-align: center;
     }
 
-    /** aparatado de kawasaki*/
+    .text-mt{
+        text-align: center;
+    }
+
+    .serie-fz{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .text-fz{
+        text-align: center;
+        margin: auto;
+    }
+
+    /** Apartado de honda*/
+
+    .img-logo{
+        width: 0;
+    }
+
+    /** Apartado de Kawasaki*/
 
     .kawasaki-logis{
-        width: 0%;
+        width: 0;
     }
 
-    .img-kawa{
-        width: 35%;
-        height: 25%;
+    .parr-h2r{
+        text-align: center;
     }
 
     .img-focos{
-        width: 50%;
-        height: 50%;
+        width: 0;
+    }
+
+    .parr-kawa{
+        display: inline-block;
+        text-align: justify;
     }
 
     .turbo-cargador{
-        width: 35%;
-        height: 50%;
+      width: 0;
     }
 
-    /**aparatado de ducati */
+    /** Apartado de Ducati*/
 
-    .img-logis{
-        width: 0%;
+    .ducati-logis{
+        width: 0;
     }
 
     .video{
